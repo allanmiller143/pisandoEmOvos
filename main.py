@@ -7,7 +7,7 @@ while(opcao != 0 ):
   if(opcao == 1):
     armador()
   elif(opcao ==2):
-    if(jogador1["funcao"] != 'indefinada'):
+    if(jogador1["funcao"] != 'indefinida'):
       imprimeMapa()
       print("você pode esconder até 3 ovos podres por linha do terreno.")
       poeOvo(maxOvos)
@@ -15,10 +15,11 @@ while(opcao != 0 ):
     else:
       print("defina armador primeiro")
   elif(opcao == 3):
-      if(jogador1["funcao"] != 'indefinada'):
+      print(jogador1["funcao"])
+      if(jogador1["funcao"] != 'indefinida'):
         movimetacaoAndarilho() 
       else:
-        print("defina o armador")       
+        print("defina o armador primeiro")       
   elif(opcao == 4):
     mostraPlacar()
   elif(opcao == 0):
